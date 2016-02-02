@@ -13,6 +13,7 @@
 package org.semanticweb.owlapi.api.test.syntax;
 
 import javax.annotation.Nonnull;
+import org.junit.Ignore;
 
 import org.semanticweb.owlapi.api.test.baseclasses.AbstractFileRoundTrippingTestCase;
 
@@ -21,6 +22,7 @@ import org.semanticweb.owlapi.api.test.baseclasses.AbstractFileRoundTrippingTest
  *         Informatics Group
  * @since 3.1.0
  */
+@Ignore
 public class TurtleSharedBlankNodeTestCase extends
         AbstractFileRoundTrippingTestCase {
 
