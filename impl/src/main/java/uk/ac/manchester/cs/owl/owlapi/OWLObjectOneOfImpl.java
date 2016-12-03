@@ -55,7 +55,7 @@ public class OWLObjectOneOfImpl extends OWLAnonymousClassExpressionImpl
      *        values for oneof
      */
     public OWLObjectOneOfImpl(@Nonnull Set<? extends OWLIndividual> values) {
-        this.values = new HashSet<>(checkNotNull(values,
+        this.values = new HashSet<OWLIndividual>(checkNotNull(values,
                 "values cannot be null"));
     }
 

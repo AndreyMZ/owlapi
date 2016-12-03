@@ -84,9 +84,9 @@ public class SWRLRuleImpl extends OWLLogicalAxiomImplWithEntityAndAnonCaching
             @Nonnull Set<? extends SWRLAtom> head,
             @Nonnull Collection<? extends OWLAnnotation> annotations) {
         super(annotations);
-        this.head = new LinkedHashSet<>(checkNotNull(head,
+        this.head = new LinkedHashSet<SWRLAtom>(checkNotNull(head,
                 "head cannot be null"));
-        this.body = new LinkedHashSet<>(checkNotNull(body,
+        this.body = new LinkedHashSet<SWRLAtom>(checkNotNull(body,
                 "body cannot be null"));
         containsAnonymousClassExpressions = hasAnon();
     }

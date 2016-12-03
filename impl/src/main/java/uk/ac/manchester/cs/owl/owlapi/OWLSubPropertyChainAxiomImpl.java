@@ -59,7 +59,7 @@ public class OWLSubPropertyChainAxiomImpl extends
             @Nonnull OWLObjectPropertyExpression superProperty,
             @Nonnull Collection<? extends OWLAnnotation> annotations) {
         super(annotations);
-        this.propertyChain = new ArrayList<>(checkNotNull(propertyChain,
+        this.propertyChain = new ArrayList<OWLObjectPropertyExpression>(checkNotNull(propertyChain,
                 "propertyChain cannot be null"));
         this.superProperty = checkNotNull(superProperty,
                 "superProperty cannot be null");
